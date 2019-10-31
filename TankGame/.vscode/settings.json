@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"E:/Unreal repos/TankGame/TankGame/.vscode": true,
+		"E:/Unreal repos/TankGame/TankGame/Content": true,
+		"E:/Unreal repos/TankGame/TankGame/Intermediate": true
+	}
+}

@@ -1,0 +1,707 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "TankGame Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Shipping",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Shipping",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Shipping",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Test",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Test",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win32",
+				"Test",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Shipping",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Shipping",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Shipping",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Test",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Test",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGame Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGame Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGame",
+				"Win64",
+				"Test",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGameEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"Debug",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGameEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"DebugGame",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TankGameEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		},
+		{
+			"label": "TankGameEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TankGameEditor",
+				"Win64",
+				"Development",
+				"E:\\Unreal repos\\TankGame\\TankGame\\TankGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.23"
+			}
+		}
+	]
+}
