@@ -2,11 +2,13 @@
 
 #pragma once
 
-#include "TankAimingComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"
 
+//Forward declarations
+class UTankBarrel; 
+class UTankAimingComponent;
 UCLASS()
 class TANKGAME_API ATank : public APawn
 {
@@ -33,5 +35,5 @@ public:
 	float LaunchSpeed = 100000; // TODO find sensible default
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetBarrelReference(UStaticMeshComponent* BarrelToSet);
+	void SetBarrelReference(UTankBarrel* BarrelToSet);
 };
