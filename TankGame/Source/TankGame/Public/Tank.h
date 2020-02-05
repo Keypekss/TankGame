@@ -10,6 +10,8 @@
 class UTankBarrel;
 class UTankTurret;
 class UTankAimingComponent;
+class AProjectile;
+
 UCLASS()
 class TANKGAME_API ATank : public APawn
 {
@@ -30,14 +32,28 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	void AimAt(FVector OutHitLocation);
 
 	UPROPERTY(EditAnywhere, Category = Firing)
 	float LaunchSpeed = 4000;
+
+	//TSubclass alternative of UClass, enforces AProjectile type in the blueprint screen 
+	UPROPERTY(EditAnywhere, Category = Setup)
+	TSubclassOf<AProjectile> ProjectileBlueprint; 
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetTurretReference(UTankTurret* TurretToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Firing)
+	void Fire();
+
+	// Local barrel reference for spawning projectile
+	UTankBarrel* Barrel = nullptr;
+	float ReloadTimeInSeconds = 3;
+	double LastFireTime = 0;
+
+	void AimAt(FVector OutHitLocation);
+
 };
